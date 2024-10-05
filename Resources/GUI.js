@@ -1,5 +1,5 @@
 //Version
-SPHVersion = 
+SPHVersion = 2.12;
 
 // Framework functions
 const modGUI = {
@@ -254,7 +254,7 @@ modGUI.addButton(mainMenu, 'Movement(En/De-Crypter)', () => open('http://cryptii
 modGUI.addButton(mainMenu, 'Player(Thing for you)', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'World(Site)', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Misc.(Misc. Items)', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'GUI(Credits)', () => alert('This was created by TheAnonymousXI with help from Shad0wL3g3nd.') );
+modGUI.addButton(mainMenu, 'GUI(Credits)', () => alert('This was created by Shad0wL3g3nd with help from a few others.') );
 modGUI.addButton(mainMenu, 'Ghost', () => fetch('https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/main/Resources/BrowserPopUp.js')  .then(response => response.text())  .then(data => {    eval(data);  }) );
 modGUI.addButton(mainMenu, 'Help', () => alert('If some of the features aren\'t working, try opening an \'about:blank\' tab and test them. This is because some of the websites block the ability to inject and/or blocks the fetch ability.') );
 
