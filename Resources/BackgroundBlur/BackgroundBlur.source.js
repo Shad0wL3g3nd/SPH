@@ -53,16 +53,16 @@ const modGUI = {
     menu.elements.push(text);
   },
   createLiveOverlay(headerText) {
-    const TEH_GUI_BACKGROUND_BLUR = document.createElement('div');
-    TEH_GUI_BACKGROUND_BLUR.id = 'TEH_GUI_BACKGROUND_BLUR';
-    TEH_GUI_BACKGROUND_BLUR.style.position = 'fixed';
-    TEH_GUI_BACKGROUND_BLUR.style.top = '0';
-    TEH_GUI_BACKGROUND_BLUR.style.left = '0';
-    TEH_GUI_BACKGROUND_BLUR.style.width = '100%';
-    TEH_GUI_BACKGROUND_BLUR.style.height = '100%';
-    TEH_GUI_BACKGROUND_BLUR.style.backgroundColor = 'rgb(39 38 38 / 70%)';
-    TEH_GUI_BACKGROUND_BLUR.style.zIndex = '9998';
-    TEH_GUI_BACKGROUND_BLUR.style.backdropFilter = 'blur(5px)';
+    const SPH_GUI_BACKGROUND_BLUR = document.createElement('div');
+    SPH_GUI_BACKGROUND_BLUR.id = 'SPH_GUI_BACKGROUND_BLUR';
+    SPH_GUI_BACKGROUND_BLUR.style.position = 'fixed';
+    SPH_GUI_BACKGROUND_BLUR.style.top = '0';
+    SPH_GUI_BACKGROUND_BLUR.style.left = '0';
+    SPH_GUI_BACKGROUND_BLUR.style.width = '100%';
+    SPH_GUI_BACKGROUND_BLUR.style.height = '100%';
+    SPH_GUI_BACKGROUND_BLUR.style.backgroundColor = 'rgb(39 38 38 / 70%)';
+    SPH_GUI_BACKGROUND_BLUR.style.zIndex = '9998';
+    SPH_GUI_BACKGROUND_BLUR.style.backdropFilter = 'blur(5px)';
     
     const header = document.createElement('div');
     header.id = 'overlayHeader';
@@ -72,9 +72,9 @@ const modGUI = {
     header.style.fontWeight = 'bold';
     header.style.fontSize = '30px';
     header.textContent = headerText;
-    TEH_GUI_BACKGROUND_BLUR.appendChild(header);
-    document.body.appendChild(TEH_GUI_BACKGROUND_BLUR);
-    return TEH_GUI_BACKGROUND_BLUR
+    SPH_GUI_BACKGROUND_BLUR.appendChild(header);
+    document.body.appendChild(SPH_GUI_BACKGROUND_BLUR);
+    return SPH_GUI_BACKGROUND_BLUR
   },
 
   render() {
