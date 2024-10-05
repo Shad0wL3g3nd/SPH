@@ -1,3 +1,6 @@
+//Version
+SPHVersion = 
+
 // Framework functions
 const modGUI = {
   GUI: {
@@ -242,9 +245,9 @@ const modGUI = {
 
 
 //Make the GUI with the labels and size.
-const mainMenu = modGUI.createMenu('GUI Beta 2.12', 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
+const mainMenu = modGUI.createMenu('GUI Beta ' + SPHVersion, 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
-modGUI.addText(mainMenu, 'Version 2.12 of the GUI part of Shadow\'s Privacy Hub, or the S.P.H.');
+modGUI.addText(mainMenu, 'Version ' + SPHVersion + ' of the GUI part of Shadow\'s Privacy Hub, or the S.P.H.');
 modGUI.addButton(mainMenu, 'Combat(Tools)', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Visual(Stuff you see)', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Movement(En/De-Crypter)', () => open('http://cryptii.com','targetname','height=500,width=500') );
