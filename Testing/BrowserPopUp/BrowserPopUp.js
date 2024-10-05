@@ -1,1 +1,2 @@
-open('https://google.com','targetname','height=500,width=500')
+var x = window.open('') // open a blank tab;
+x.document.write('<iframe src="https://bing.com" allowfullscreen="true" allowpaymentrequest="true" hight="300" width="600" loading="eager" name="SPH Secure" referrerpolicy="origin" sandbox="allow-scripts" ></iframe>');
