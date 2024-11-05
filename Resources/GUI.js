@@ -248,14 +248,14 @@ const modGUI = {
 const mainMenu = modGUI.createMenu('GUI Beta ' + SPHVersion, 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
 modGUI.addText(mainMenu, 'Version ' + SPHVersion + ' of the GUI part of Shadow\'s Privacy Hub, or the S.P.H.');
-modGUI.addButton(mainMenu, 'Combat(Tools)', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'Visual(Stuff you see)', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'Movement(En/De-Crypter)', () => open('http://cryptii.com','targetname','height=500,width=500') );
-modGUI.addButton(mainMenu, 'Player(Thing for you)', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'World(Site)', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'Misc.(Misc. Items)', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'GUI(Credits)', () => alert('This was created by Shad0wL3g3nd with help from a few others.') );
-modGUI.addButton(mainMenu, 'Ghost', () => fetch('https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/main/Resources/BrowserPopUp.js')  .then(response => response.text())  .then(data => {    eval(data);  }) );
+modGUI.addButton(mainMenu, 'Tools', () => alert('Coming Soon!') );
+modGUI.addButton(mainMenu, 'Visual', () => alert('Coming Soon!') );
+modGUI.addButton(mainMenu, 'Cryptii', () => open('http://cryptii.com','targetname','height=500,width=500') );
+modGUI.addButton(mainMenu, 'Privacy', () => alert('Coming Soon!') );
+modGUI.addButton(mainMenu, 'Site', () => alert('Coming Soon!') );
+modGUI.addButton(mainMenu, 'Misc.', () => alert('Coming Soon!') );
+modGUI.addButton(mainMenu, 'Credits', () => alert('This was created by Shad0wL3g3nd with help from a few others.') );
+modGUI.addButton(mainMenu, 'Pop-up Browser', () => fetch('https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/main/Resources/BrowserPopUp.js')  .then(response => response.text())  .then(data => {    eval(data);  }) );
 modGUI.addButton(mainMenu, 'Help', () => alert('If some of the features aren\'t working, try opening an \'about:blank\' tab and test them. This is because some of the websites block the ability to inject and/or blocks the fetch ability.') );
 
 /*
@@ -283,7 +283,7 @@ modGUI.addSlider(
 
 
 // Create overlay
-let overlay = modGUI.createLiveOverlay('RSHIFT to toggle')
+let overlay = modGUI.createLiveOverlay('')
 
 window.addEventListener('keydown', (event) => {
   if (event.code == 'ShiftRight') {
