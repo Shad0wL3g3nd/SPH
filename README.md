@@ -5,7 +5,7 @@ Imagine your every day hacked client for a video game, now imagine all of the ch
 
 # Injector Installation
 
-Copy the code below, and rclick your bookmarks bar and click the 'Add page...' button. After so, paste the code you just copied, and paste it in where it says 'URL'. Where it says 'Name' type in 'SEH' or whatever you want to call it.
+Copy the code below, and rclick your bookmarks bar and click the 'Add page...' button. After so, paste the code you just copied, and paste it in where it says 'URL'. Where it says 'Name' type in 'SPH' or whatever you want to call it.
 ```
 javascript:(function()%7Bfetch('https%3A%2F%2Fraw.githubusercontent.com%2FShad0wL3g3nd%2FSPH%2Fmain%2FResources%2FGUI.js').then((res)%20%3D%3E%20res.text()).then((js)%20%3D%3E%20eval(js))%3B%7D)()%3B
 ```
