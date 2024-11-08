@@ -3,6 +3,11 @@ Shadows's Privacy Hub
 
 Imagine your every day hacked client for a video game, now imagine all of the cheats there are privacy focused tools. This JavaScript based client brings together both of those things together and just looks super cool. Also, the current toggle key is RSHIFT.
 
+# Beta
+```
+To use the beta version before it is released, change "main" in the fetch command to "Development". This is not meant for widespread usage, so it the injector is not listed here. To use it must manually install it yourself.
+```
+
 # Injector Installation
 
 Copy the code below, and rclick your bookmarks bar and click the 'Add page...' button. After so, paste the code you just copied, and paste it in where it says 'URL'. Where it says 'Name' type in 'SPH' or whatever you want to call it.
