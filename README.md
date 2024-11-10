@@ -70,5 +70,5 @@ https://www.freeformatter.com/javascript-beautifier.html
 ```
 ### JS Inject
 ```
-https://disnos9.github.io/jsinject/
+https://disnos9.github.io/jsinject-old/
 ```
