@@ -238,18 +238,13 @@ const modGUI = {
 //Make the GUI for the Browser
 const browser = modGUI.createMenu('Browser', 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
-let overlay = modGUI.createLiveOverlay('')
 function toggleBrowser() {
   if (
-    modGUI.getMenu(browser).style.display === 'none' &&
-    overlay.style.display === 'none'
+    modGUI.getMenu(browser).style.display === 'none'
   ) {
     modGUI.getMenu(browser).style.display = 'block';
-    overlay.style.display = 'block';
-    document.exitPointerLock();
   } else {
     modGUI.getMenu(browser).style.display = 'none';
-    overlay.style.display = 'none';
   }
 };
 
@@ -294,6 +289,10 @@ modGUI.addButton(mainMenu, 'Example Title', () => fetch('https://example.com/exa
 
 
 
+//Creates overlay
+let overlay = modGUI.createLiveOverlay('')
+
+//Toggles everything
 window.addEventListener('keydown', (event) => {
   if (event.code == 'ShiftRight') {
       if (
