@@ -235,27 +235,34 @@ const modGUI = {
   },
 };
 
+//Make the GUI for the Browser
+const browser = modGUI.createMenu('Browser', 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
-
+let overlay = modGUI.createLiveOverlay('')
+function toggleBrowse() {
+  if (
+    modGUI.getMenu(browser).style.display === 'none' &&
+    overlay.style.display === 'none'
+  ) {
+    modGUI.getMenu(browser).style.display = 'block';
+    overlay.style.display = 'block';
+    document.exitPointerLock();
+  } else {
+    modGUI.getMenu(browser).style.display = 'none';
+    overlay.style.display = 'none';
+  }
+};
 
 // Create main menu w/ buttons
-
-
-
-
-
-//Make the GUI with the labels and size.
-const mainMenu = modGUI.createMenu('GUI Beta ' + SPHVersion, 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
-
+const mainMenu = modGUI.createMenu('GUI Beta' + SPHVersion, 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 modGUI.addText(mainMenu, 'Version ' + SPHVersion + ' of the GUI part of Shadow\'s Privacy Hub, or the S.P.H.');
 modGUI.addButton(mainMenu, 'Tools', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Visual', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Cryptii', () => open('http://cryptii.com','targetname','height=500,width=500') );
 modGUI.addButton(mainMenu, 'Privacy', () => alert('Coming Soon!') );
-modGUI.addButton(mainMenu, 'Site', () => alert('Coming Soon!') );
+modGUI.addButton(mainMenu, 'Site', () => toggleBrowser() );
 modGUI.addButton(mainMenu, 'Misc.', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Credits', () => alert('This was created by Shad0wL3g3nd with help from a few others.') );
-modGUI.addButton(mainMenu, 'Pop-up Browser', () => fetch('https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/main/Resources/BrowserPopUp.js')  .then(response => response.text())  .then(data => {    eval(data);  }) );
 modGUI.addButton(mainMenu, 'Help', () => alert('If some of the features aren\'t working, try opening an \'about:blank\' tab and test them. This is because some of the websites block the ability to inject and/or blocks the fetch ability.') );
 
 /*
@@ -263,6 +270,9 @@ modGUI.addButton(mainMenu, 'Help', () => alert('If some of the features aren\'t 
 Note:
 You can always replace any 's with "s or add a '\' in front of any 's.
 If you add a new module, try to switch them out.
+
+Make a new GUI
+const GUIname = modGUI.createMenu('GUItitle', 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
 Add text box:
 modGUI.addText(mainMenu, 'Your Text Here');
@@ -277,13 +287,12 @@ modGUI.addSlider(
   min, max start,
   value => console.log(`Slider 1 value: ${value}`)
 );
+
+Button that fetches code from a website:
+modGUI.addButton(mainMenu, 'Example Title', () => fetch('https://example.com/example.js')  .then(response => response.text())  .then(data => {    eval(data);  }) );
 */
 
 
-
-
-// Create overlay
-let overlay = modGUI.createLiveOverlay('')
 
 window.addEventListener('keydown', (event) => {
   if (event.code == 'ShiftRight') {
