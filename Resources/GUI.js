@@ -1,5 +1,5 @@
 //Version
-SPHVersion = 2.12;
+SPHVersion = 2.19;
 
 // Framework functions
 const modGUI = {
