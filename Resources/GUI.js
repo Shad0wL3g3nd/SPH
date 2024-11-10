@@ -295,12 +295,10 @@ window.addEventListener('keydown', (event) => {
   if (event.code == 'ShiftRight') {
       if (modGUI.getMenu(mainMenu).style.display === 'none' && overlay.style.display === 'none') {
         modGUI.getMenu(mainMenu).style.display = 'block';
-        modGUI.getMenu(browser).style.display = 'block';
         overlay.style.display = 'block';
         document.exitPointerLock();
       } else {
         modGUI.getMenu(mainMenu).style.display = 'none';
-        modGUI.getMenu(browser).style.display = 'none';
         overlay.style.display = 'none';
       }
   }
