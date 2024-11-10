@@ -239,7 +239,7 @@ const modGUI = {
 const browser = modGUI.createMenu('Browser', 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
 let overlay = modGUI.createLiveOverlay('')
-function toggleBrowse() {
+function toggleBrowser() {
   if (
     modGUI.getMenu(browser).style.display === 'none' &&
     overlay.style.display === 'none'
