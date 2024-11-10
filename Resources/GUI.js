@@ -239,9 +239,7 @@ const modGUI = {
 const browser = modGUI.createMenu('Browser', 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 
 function toggleBrowser() {
-  if (
-    modGUI.getMenu(browser).style.display === 'none'
-  ) {
+  if (modGUI.getMenu(browser).style.display === 'none') {
     modGUI.getMenu(browser).style.display = 'block';
   } else {
     modGUI.getMenu(browser).style.display = 'none';
@@ -295,10 +293,7 @@ let overlay = modGUI.createLiveOverlay('')
 //Toggles everything
 window.addEventListener('keydown', (event) => {
   if (event.code == 'ShiftRight') {
-      if (
-        modGUI.getMenu(mainMenu).style.display === 'none' &&
-        overlay.style.display === 'none'
-      ) {
+      if (modGUI.getMenu(mainMenu).style.display === 'none' && overlay.style.display === 'none') {
         modGUI.getMenu(mainMenu).style.display = 'block';
         overlay.style.display = 'block';
         document.exitPointerLock();
@@ -312,5 +307,6 @@ window.addEventListener('keydown', (event) => {
 // Call render to display the GUI
 modGUI.render();
 modGUI.getMenu(mainMenu).style.display = 'none';
+modGUI.getMenu(browser).style.display = 'none';
 overlay.style.display = 'none';
 alert('S.P.H. Injected');
