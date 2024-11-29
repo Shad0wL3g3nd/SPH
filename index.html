@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script>
+    function inject(input) {
+        let version = null;
+        if(input != "s" && input != "d") {
+            while(input != "s" && input != "d") {
+                input = prompt("Would you like to test the stable(s) or development(d) version of SPH?");
+            }
+        }
+        if((input == "s" || input == "d")) {
+            if(input == "s") {
+                version = "Stable";
+            } else {
+                version = "Development";
+            }
+        }
+        //fetch("https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/" + version + "/Resources/GUI.js").then((res) => res.text()).then((js) => eval(js));
+        const script = document.createElement('script');
+        script.src = "https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/" + version + "/Resources/GUI.js";
+        document.body.appendChild(script);
+
+    }
+</script>
