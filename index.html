@@ -14,10 +14,10 @@
                 version = "Development";
             }
         }
-        //fetch("https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/" + version + "/Resources/GUI.js").then((res) => res.text()).then((js) => eval(js));
-        const script = document.createElement('script');
-        script.src = "https://raw.githubusercontent.com/Shad0wL3g3nd/SPH/" + version + "/Resources/GUI.js";
-        document.body.appendChild(script);
+        //"https://cdn.jsdelivr.net/gh/Shad0wL3g3nd/SPH@" + version + "/Resources/Main.js"
+        const SPH = document.createElement('SPH');
+        SPH.src = "https://cdn.jsdelivr.net/gh/Shad0wL3g3nd/SPH@" + version + "/Resources/Main.js";
+        document.body.appendChild(SPH);
 
     }
 </script>

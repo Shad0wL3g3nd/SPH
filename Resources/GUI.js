@@ -247,7 +247,7 @@ function toggleBrowser() {
 };
 
 // Create main menu w/ buttons
-const mainMenu = modGUI.createMenu('GUI Beta' + SPHVersion, 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
+const mainMenu = modGUI.createMenu('GUI Beta ' + SPHVersion, 'SPH_GUI_TOGGLEABLES', 'absolute', '20px', '20px');
 modGUI.addText(mainMenu, 'Version ' + SPHVersion + ' of the GUI part of Shadow\'s Privacy Hub, or the S.P.H.');
 modGUI.addButton(mainMenu, 'Tools', () => alert('Coming Soon!') );
 modGUI.addButton(mainMenu, 'Visual', () => alert('Coming Soon!') );

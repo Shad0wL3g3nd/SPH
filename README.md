@@ -24,36 +24,16 @@ Shad0wL3g3nd
 
 ### Nice
 ```
-fetch('URL Here')
-  .then((res) => res.text())
-  .then((js) => eval(js));
+const elementName = document.createElement('elementName');
+SPH.elementName = "https://cdn.jsdelivr.net/gh/GithubUsername/Repo@Branch/PathToFile.js";
+document.body.appendChild(elementName);
 ```
 ### Compact
 
 ```
-fetch('URL Here').then((res) => res.text()).then((js) => eval(js));
+const elementName = document.createElement('elementName');  SPH.elementName = "https://cdn.jsdelivr.net/gh/GithubUsername/Repo@Branch/PathToFile.js"; document.body.appendChild(elementName);
 ```
 
-## Outdated Fetch Code
-```
-## Fetch code
-\```
-fetch('URL Here')  .then(response => response.text())  .then(data => {    eval(data);  })
-\```
-### Secondary
-\```
-let fetchRes = fetch('URL Here');fetchRes.then(res =>    res.json()).then(d => {        console.log(d)    })
-\```
-## Fetch code nicer
-\```
-fetch('URL Here')
-  .then(response => response.text())
-  .then(data => {
-    eval(data);
-  }
-)
-\```
-```
 ## Useful Links
 
 ### Bookmarklet Compiler
