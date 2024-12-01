@@ -1,5 +1,13 @@
 //Version
-SPHVersion = 2.19;
+SPHVersion = 2.23;
+
+
+//Injector from URL script
+function inject(url) {
+  const script = document.createElement('script');
+  script.src = url;
+  document.body.appendChild(script);
+}
 
 // Framework functions
 const modGUI = {

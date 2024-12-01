@@ -14,10 +14,9 @@
                 version = "Development";
             }
         }
-        //"https://cdn.jsdelivr.net/gh/Shad0wL3g3nd/SPH@" + version + "/Resources/Main.js"
-        const SPH = document.createElement('SPH');
-        SPH.src = "https://cdn.jsdelivr.net/gh/Shad0wL3g3nd/SPH@" + version + "/Resources/Main.js";
-        document.body.appendChild(SPH);
+        const script = document.createElement('script');
+        script.src = "https://cdn.jsdelivr.net/gh/Shad0wL3g3nd/SPH@" + version + "/Resources/GUI.js";
+        document.body.appendChild(script);
 
     }
 </script>

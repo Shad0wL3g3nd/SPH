@@ -24,9 +24,9 @@ Shad0wL3g3nd
 
 ### Nice
 ```
-const elementName = document.createElement('elementName');
-SPH.elementName = "https://cdn.jsdelivr.net/gh/GithubUsername/Repo@Branch/PathToFile.js";
-document.body.appendChild(elementName);
+const script = document.createElement('script');
+script.src = "https://cdn.jsdelivr.net/gh/GithubUsername/Repo@Branch/PathToFile.js";
+document.body.appendChild(script);
 ```
 ### Compact
 
@@ -40,13 +40,9 @@ const elementName = document.createElement('elementName');  SPH.elementName = "h
 ```
 https://caiorss.github.io/bookmarklet-maker/
 ```
-### Bookmarklet Combiner
-```
-https://w-shadow.com/bookmarklet-combiner/
-```
 ### Javascript Formatter
 ```
-https://www.freeformatter.com/javascript-beautifier.html
+https://beautifier.io
 ```
 ### JS Inject
 ```
