@@ -1,6 +1,8 @@
 # S.P.H.
 Shadows's Privacy Hub
 
+(Rewrite may be coming before 2030. Busy for a while, so don't expect it soon.)
+
 Imagine your every day hacked client for a video game, now imagine all of the cheats there are privacy focused tools. This JavaScript based client brings together both of those things together and just looks super cool. Also, the current toggle key is RSHIFT.
 
 # Beta
